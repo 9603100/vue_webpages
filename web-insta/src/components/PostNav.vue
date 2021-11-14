@@ -1,7 +1,9 @@
 <template>
   <div>
     <div class="mb-4">
-      <b-avatar variant="info" src="https://placekitten.com/300/300"></b-avatar>
+      <a href="">
+        <b-avatar variant="info" src="https://placekitten.com/300/300"></b-avatar>
+      </a>
     </div>
     
     <a href="">meongdi_</a>
