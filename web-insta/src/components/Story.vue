@@ -1,12 +1,17 @@
 <template>
-  <div>
-    <h1>Story</h1>
+  <div class="my-4">
+    <story-items></story-items>
   </div>
 </template>
 
 <script>
+import StoryItems from '@/components/StoryItems'
+
 export default {
-  name: 'Story'
+  name: 'Story',
+  components: {
+    StoryItems,
+  }
 }
 </script>
 
