@@ -1,5 +1,5 @@
 <template>
-  <div id="home">
+  <div id="app">
     <nav-bar></nav-bar>
   </div>
 </template>
@@ -8,7 +8,7 @@
 import NavBar from '@/components/NavBar'
 
 export default {
-  name: 'Home',
+  name: 'app',
   components: {
     NavBar,
   }
@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style>
-#home {
+#app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
