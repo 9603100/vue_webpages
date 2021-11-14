@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="mb-4">
+  <div class="d-flex">
+    <div class="mb-4 me-3">
       <a href="">
         <b-avatar variant="info" src="https://placekitten.com/300/300"></b-avatar>
       </a>
@@ -8,10 +8,8 @@
     
     <a href="">meongdi_</a>
 
-    <div>
-
+    <div class="ms-auto">
       <button @click="modalShow = !modalShow">...</button>
-
       <b-modal v-model="modalShow">
         <b-list-group>
           <b-list-group-item>신고</b-list-group-item>
@@ -24,6 +22,7 @@
         </b-list-group>
       </b-modal>
     </div>
+
   </div>
 </template>
 
