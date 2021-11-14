@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <nav-bar></nav-bar>
+    <story></story>
     <recommend></recommend>
     <post></post>
   </div>
@@ -10,6 +11,7 @@
 import NavBar from '@/components/NavBar'
 import Recommend from '@/components/Recommend'
 import Post from '@/components/Post'
+import Story from '@/components/Story'
 
 export default {
   name: 'app',
@@ -17,6 +19,7 @@ export default {
     NavBar,
     Recommend,
     Post,
+    Story,
   }
 }
 </script>
