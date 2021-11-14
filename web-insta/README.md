@@ -1,4 +1,4 @@
-# web-project
+# web-insta
 
 ## Project setup
 ```
