@@ -2,18 +2,21 @@
   <div id="app">
     <nav-bar></nav-bar>
     <recommend></recommend>
+    <post></post>
   </div>
 </template>
 
 <script>
 import NavBar from '@/components/NavBar'
 import Recommend from '@/components/Recommend'
+import Post from '@/components/Post'
 
 export default {
   name: 'app',
   components: {
     NavBar,
     Recommend,
+    Post,
   }
 }
 </script>
