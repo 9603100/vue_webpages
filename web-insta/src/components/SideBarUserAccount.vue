@@ -13,7 +13,6 @@
         </b-list-group>
       </b-modal>
     </div>
-
   </div>
 </template>
 
