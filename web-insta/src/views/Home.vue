@@ -1,20 +1,20 @@
 <template>
   <div>
     <story></story>
-    <recommend></recommend>
+    <side-bar></side-bar>
     <post></post>
   </div>
 </template>
 
 <script>
-import Recommend from '@/components/Recommend'
+import SideBar from '@/components/SideBar'
 import Post from '@/components/Post'
 import Story from '@/components/Story'
 
 export default {
   name: 'Home',
   components : {
-    Recommend,
+    SideBar,
     Post,
     Story,
   }
