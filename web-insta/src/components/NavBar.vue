@@ -1,7 +1,7 @@
 <template>
   <div class="nav-bar">
     <b-navbar toggleable="lg" type="dark" variant="secondary">
-      <b-navbar-brand href="#">Instagram</b-navbar-brand>
+      <b-navbar-brand href="#" @click="moveToHome">Instagram</b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
         <!-- Right aligned nav items -->
@@ -13,12 +13,12 @@
         </b-navbar-nav>
     
         <b-navbar-nav>
-          <b-nav-item href="#">Home</b-nav-item>
+          <b-nav-item href="#" @click="moveToHome">Home</b-nav-item>
           <b-nav-item href="#">DM</b-nav-item>
           <b-nav-item href="#">Create</b-nav-item>
           <b-nav-item href="#">Explore</b-nav-item>
           <b-nav-item href="#">Notice</b-nav-item>
-          <b-nav-item href="#">Profile</b-nav-item>
+          <b-nav-item href="#" @click="moveToProfile">Profile</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -28,6 +28,14 @@
 <script>
 export default {
   name: 'NavBar',
+  methods: {
+    moveToHome: function(){
+      this.$router.push({ name: 'Home' })
+    },
+    moveToProfile: function(){
+      this.$router.push({ name: 'Profile' })
+    }
+  }
 }
 </script>
 

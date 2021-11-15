@@ -1,5 +1,6 @@
 <template>
   <div class="profile">
+    <p>User's profile</p>
   </div>
 </template>
 
