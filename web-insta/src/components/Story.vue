@@ -1,5 +1,5 @@
 <template>
-  <div class="my-4">
+  <div class="my-4 story-box">
     <story-items></story-items>
   </div>
 </template>
@@ -16,5 +16,9 @@ export default {
 </script>
 
 <style>
-
+.story-box{
+  background-color: white;
+  border: 1px solid #dcdcdc;
+  padding: 15px;
+}
 </style>
