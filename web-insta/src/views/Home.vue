@@ -1,9 +1,15 @@
 <template>
-  <div>
-    <story></story>
-    <side-bar></side-bar>
-    <post></post>
-  </div>
+  <b-container>
+    <b-row>
+      <b-col>
+        <story></story>
+        <post></post>
+      </b-col>
+      <b-col>
+        <side-bar></side-bar>
+      </b-col>
+    </b-row>
+  </b-container>
 </template>
 
 <script>
