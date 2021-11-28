@@ -23,6 +23,9 @@ export default {
     SideBar,
     Post,
     Story,
+  },
+  created: function(){
+    this.$store.dispatch('LoadItems')
   }
 }
 </script>
