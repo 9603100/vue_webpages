@@ -7,6 +7,8 @@ export default new Vuex.Store({
   state: {
     user: {
       id: "1",
+      profile_img_url: "http://archivenew.vop.co.kr/images/90952a5d266e2222a78d4eb07938162f/2018-05/26023757_DeDeCbRVQAAhzEb.jpg",
+
     },
     items: [
       {

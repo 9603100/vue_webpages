@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="bg-light">
     <nav-bar></nav-bar>
     <router-view/>
   </div>
@@ -7,6 +7,13 @@
 
 <script>
 import NavBar from '@/components/NavBar'
+import Vue from 'vue'
+import Vuex from 'vuex'
+import { BootstrapVue, BootstrapVueIcons } from 'bootstrap-vue'
+
+Vue.use(Vuex)
+Vue.use(BootstrapVue)
+Vue.use(BootstrapVueIcons)
 
 export default {
   name: 'app',
@@ -24,6 +31,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+a {
+  text-decoration: none;
 }
 </style>

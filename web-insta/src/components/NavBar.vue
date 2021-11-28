@@ -1,31 +1,22 @@
 <template>
   <div class="nav-bar">
-    <b-navbar toggleable="lg" type="dark" variant="secondary">
-      <b-navbar-brand href="#" @click="moveToHome">Instagram</b-navbar-brand>
-      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-      <b-collapse id="nav-collapse" is-nav>
-        <!-- Right aligned nav items -->
-        <b-navbar-nav class="ml-auto">
-          <b-nav-form>
-            <b-form-input size="sm" class="mr-sm-2" placeholder="Search"></b-form-input>
-            <b-button size="sm" class="my-2 my-sm-0" type="submit">Search</b-button>
-          </b-nav-form>
-        </b-navbar-nav>
-    
-        <b-navbar-nav>
-          <b-nav-item href="#" @click="moveToHome">Home</b-nav-item>
-          <b-nav-item href="#">DM</b-nav-item>
-          <b-nav-item href="#">Create</b-nav-item>
-          <b-nav-item href="#">Explore</b-nav-item>
-          <b-nav-item href="#">Notice</b-nav-item>
-          <b-nav-item href="#" @click="moveToProfile">Profile</b-nav-item>
-        </b-navbar-nav>
-      </b-collapse>
+    <b-navbar toggleable="lg" class="navbar d-flex justify-content-between">
+      <b-navbar-brand href="#" @click="moveToHome"><img src="@/assets/instagram.png" alt=""></b-navbar-brand>
+      <b-form-input size="sm" class="search-input" placeholder="검색"></b-form-input>
+      <b-navbar-nav class="d-flex">
+        <b-nav-item href="#" @click="moveToHome"><b-icon icon="house-door"></b-icon></b-nav-item>
+        <b-nav-item href="#"><b-icon icon="cursor"></b-icon></b-nav-item>
+        <b-nav-item href="#"><b-icon icon="plus-square"></b-icon></b-nav-item>
+        <b-nav-item href="#"><b-icon icon="compass"></b-icon></b-nav-item>
+        <b-nav-item href="#"><b-icon icon="heart"></b-icon></b-nav-item>
+        <b-nav-item href="#" @click="moveToProfile"><b-avatar variant="info" :src="user.profile_img_url" size="1.5em"></b-avatar></b-nav-item>
+      </b-navbar-nav>
     </b-navbar>
   </div>
 </template>
 
 <script>
+import { mapState } from 'vuex';
 export default {
   name: 'NavBar',
   methods: {
@@ -35,11 +26,25 @@ export default {
     moveToProfile: function(){
       this.$router.push({ name: 'Profile' })
     }
+  },
+  computed: {
+    ...mapState(['user'])
   }
 }
 </script>
 
-<style>
+<style scoped>
+
+.navbar{
+  background-color: #fff;
+  border-bottom: 1px solid #dcdcdc;
+  padding: 8px 20px;
+  width: 100vw;
+}
+
+.search-input{
+  width: 30vw;
+}
 
 
 </style>
